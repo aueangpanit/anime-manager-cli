@@ -1,0 +1,28 @@
+{
+  "name": "anime-manager-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build tsconfig.json",
+    "prepublish": "npm run build",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aueangpanit/anime-manager-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aueangpanit/anime-manager-cli/issues"
+  },
+  "homepage": "https://github.com/aueangpanit/anime-manager-cli#readme",
+  "dependencies": {
+    "@justalk/anime-api": "^3.0.0",
+    "enquirer": "^2.3.6",
+    "simple-json-db": "^2.0.0"
+  }
+}
